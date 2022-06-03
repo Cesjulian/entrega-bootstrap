@@ -1,0 +1,201 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgb(138, 247, 247), rgba(168, 79, 79, 0.671));
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sinMargenes{
+    margin: 0;
+    padding: 0;
+}
+
+.cajaDelNav {
+    margin: 20px 0;
+    border: solid;
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 1px;
+    grid-area: cajaNav;
+}
+
+.headerPaginas {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.containerUno {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 50% 15%;
+    grid-template-areas: 
+        "h2"
+        "parrafo"
+        "footer";
+}
+
+
+.headerIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(../assets/imagenes/argenplas1.jpg);
+    height: 250px;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2 {
+    grid-area: h2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafo {
+    grid-area: parrafo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 20px;
+
+    background-color: rgb(231, 59, 59);
+}
+
+
+
+
+.tituloPrincipal {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 65px;
+    font-size: 75px;
+    text-align: center;
+    color: rgb(220, 247, 220);
+}
+
+.videoCables {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: video;
+    margin: 20px;
+}
+
+
+.navDeProductos {
+grid-area: navDeProductos ;
+}
+
+.footerPaginas {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 65px;
+    font-size: 20px;
+    background-color: rgb(231, 59, 59);
+    grid-area: footerPaginas;
+}
+
+
+.containerTres {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "h2"
+        "parrafo"
+        "navDeProductos"
+        "footer";
+}
+
+
+.containerDos {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "parrafo";
+}
+
+
+
+.botonesAnimados:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+}
+
+.movimientoDeTexto:hover {
+    transform: translate(1px, 1px);
+    transition: all 3s;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 480px){
+    .parrafo {
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    
+
+    .containerDos {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "parrafo"
+            "video";
+    }   
+
+    .parrafo {
+        overflow: scroll;
+    }
+}
